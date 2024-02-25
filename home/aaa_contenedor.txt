@@ -1,0 +1,21 @@
+Contenedor:
+Un contenedor en Docker es una unidad estándar de software que empaqueta código y todas sus
+dependencias para que la aplicación se ejecute de manera rápida y confiable en diferentes
+entornos. Los contenedores son portátiles, auto-suficientes y fáciles de desplegar.
+
+Comandos:
+
+docker container run: Este comando se utiliza para crear e iniciar un nuevo contenedor a
+partir de una imagen Docker.
+Ejemplo: docker container run -d --name mi_contenedor nginx crea y ejecuta un contenedor
+llamado "mi_contenedor" utilizando la imagen de nginx en segundo plano.
+
+docker container ls: Muestra una lista de todos los contenedores en ejecución.
+Ejemplo: docker container ls muestra una lista de todos los contenedores en ejecución en el
+sistema.
+
+docker container stop: Detiene un contenedor en ejecución.
+Ejemplo: docker container stop mi_contenedor detiene el contenedor llamado "mi_contenedor".
+
+docker container rm: Elimina uno o más contenedores.
+Ejemplo: docker container rm mi_contenedor elimina el contenedor llamado "mi_contenedor".
