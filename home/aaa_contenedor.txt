@@ -84,3 +84,23 @@ Las imágenes Docker siguen el principio de "una vez construido, en cualquier lu
 ejecutable", lo que significa que una vez que se crea una imagen, se puede implementar
 y ejecutar en cualquier lugar que ejecute Docker, independientemente del sistema
 operativo subyacente o del entorno de desarrollo.
+
+Pipeline:
+Serie automatizada de pasos que se ejecutan secuencialmente para llevar a cabo una tarea o
+proceso específico. Los pipelines son fundamentales en la práctica de la integración continua
+y la entrega continua (CI/CD), así como en otras metodologías ágiles de desarrollo de software.
+
+Un pipeline típico puede incluir varios pasos, como la compilación del código fuente,
+las pruebas unitarias, las pruebas de integración, el análisis estático de código,
+la construcción de artefactos, el despliegue en entornos de desarrollo, pruebas automatizadas,
+despliegue en entornos de pruebas, y finalmente, despliegue en producción.
+
+Los pipelines permiten automatizar y estandarizar el proceso de desarrollo y despliegue de
+software, lo que conduce a una entrega más rápida y confiable de aplicaciones.
+Además, facilitan la detección temprana de errores y problemas, ya que las pruebas y
+validaciones se realizan de manera sistemática en cada etapa del pipeline.
+
+Los pipelines suelen implementarse utilizando herramientas de automatización y orquestación,
+como Jenkins, GitLab CI/CD, Travis CI, CircleCI, entre otras.
+Estas herramientas permiten definir, configurar y ejecutar pipelines de manera flexible y
+personalizada según las necesidades del proyecto y del equipo de desarrollo.
