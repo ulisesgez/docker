@@ -1,0 +1,15 @@
+Docker Start:
+Se utiliza para iniciar uno o más contenedores Docker que se encuentren en estado detenido.
+Inicia uno o más contenedores Docker que están detenidos.
+
+Ejemplo: Supongamos que tienes un contenedor Docker llamado "mi_contenedor" que está detenido.
+Para iniciar este contenedor, ejecutarías el siguiente comando:
+
+$ docker start mi_contenedor
+
+Si tienes varios contenedores que deseas iniciar al mismo tiempo, puedes especificar 
+múltiples nombres de contenedor separados por espacios:
+
+$ docker start contenedor1 contenedor2 contenedor3
+
+Este comando iniciará todos los contenedores especificados que estén detenidos.
