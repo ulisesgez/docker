@@ -1,0 +1,25 @@
+Docker Image Rm:
+Se utiliza para eliminar una o más imágenes Docker del sistema.
+Elimina una o más imágenes Docker del sistema.
+
+Ejemplo: Supongamos que deseas eliminar una imagen Docker con el ID de imagen 123456789abc.
+Ejecutarías el siguiente comando:
+
+$ docker image rm 123456789abc
+
+O también de la siguiente forma:
+
+$ docker image rm ubuntu:20.04
+
+Si deseas eliminar varias imágenes a la vez, puedes especificar los IDs de imagen separados
+por espacios:
+
+$ docker image rm 123456789abc def456789ghi
+
+También puedes eliminar todas las imágenes no utilizadas (sin contenedores asociados)
+agregando la bandera -f o --force y -a o --all:
+
+$ docker image rm -f $(docker image ls -q)
+
+Este comando eliminará todas las imágenes, incluso aquellas que estén en uso por contenedores
+en ejecución. Asegúrate de comprender el impacto antes de usarlo en un entorno de producción.
