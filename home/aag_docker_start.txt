@@ -5,7 +5,12 @@ Inicia uno o más contenedores Docker que están detenidos.
 Ejemplo: Supongamos que tienes un contenedor Docker llamado "mi_contenedor" que está detenido.
 Para iniciar este contenedor, ejecutarías el siguiente comando:
 
+
 $ docker start mi_contenedor
+
+O también de la siguiente forma:
+
+$ docker start pB8tGezDeW7U8BPpMcLMSejdSiegwH9CkE73d3fzUAv5qKKm25noWkomkg4HjWAhuv7aDU
 
 Si tienes varios contenedores que deseas iniciar al mismo tiempo, puedes especificar 
 múltiples nombres de contenedor separados por espacios:
