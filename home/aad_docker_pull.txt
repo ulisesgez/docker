@@ -1,0 +1,16 @@
+Docker Pull:
+El comando docker pull se utiliza para descargar una imagen Docker desde un registro
+público o privado. Descarga una imagen Docker desde un registro.
+
+Ejemplo: Para descargar la imagen oficial de Ubuntu desde Docker Hub, ejecutarías el 
+siguiente comando:
+
+$ docker pull ubuntu
+
+Esto descargará la última versión de la imagen de Ubuntu disponible en Docker Hub a tu
+sistema local. Si deseas una versión específica, puedes especificarla usando la etiqueta,
+por ejemplo:
+
+$ docker pull ubuntu:20.04
+
+Esto descargará la imagen de Ubuntu con la etiqueta "20.04".
