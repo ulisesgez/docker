@@ -4,7 +4,6 @@ dependencias para que la aplicación se ejecute de manera rápida y confiable en
 entornos. Los contenedores son portátiles, auto-suficientes y fáciles de desplegar.
 
 Comandos:
-
 docker container run: Este comando se utiliza para crear e iniciar un nuevo contenedor a
 partir de una imagen Docker.
 Ejemplo: docker container run -d --name mi_contenedor nginx crea y ejecuta un contenedor
@@ -19,3 +18,50 @@ Ejemplo: docker container stop mi_contenedor detiene el contenedor llamado "mi_c
 
 docker container rm: Elimina uno o más contenedores.
 Ejemplo: docker container rm mi_contenedor elimina el contenedor llamado "mi_contenedor".
+
+Repositorio de contenedores:
+Es un sistema de almacenamiento donde se guardan y organizan las imágenes de contenedores
+Docker u otros formatos de contenedores. En esencia, es una biblioteca de imágenes que pueden
+ser compartidas, descargadas y utilizadas por otros desarrolladores o equipos.
+
+Estos repositorios permiten a los desarrolladores y equipos de operaciones almacenar versiones
+estables de sus aplicaciones y servicios en forma de imágenes de contenedores.
+Esto facilita la distribución y el despliegue de software, ya que las imágenes de
+contenedores contienen todos los componentes necesarios para ejecutar una aplicación de
+manera consistente en diferentes entornos.
+
+Además, los repositorios de contenedores a menudo proporcionan características adicionales,
+como control de versiones, etiquetado, búsqueda y acceso controlado para garantizar la
+seguridad y la integridad de las imágenes almacenadas.
+
+Repositorios populares para contenedores Docker:
+
+Docker Hub: Es el registro de contenedores más grande y popular. Contiene una amplia variedad
+de imágenes Docker, incluidas las oficiales respaldadas por los desarrolladores de software
+y las creadas por la comunidad.
+
+GitHub Container Registry: GitHub ahora ofrece su propio registro de contenedores como parte
+de su plataforma. Permite a los desarrolladores almacenar imágenes de contenedores junto con
+su código fuente y facilita la integración con repositorios de código alojados en GitHub.
+
+Amazon Elastic Container Registry (ECR): Es un servicio totalmente administrado que facilita
+el almacenamiento, la administración y la implementación de imágenes de contenedores de
+Docker en AWS. Es particularmente útil si estás utilizando otros servicios de AWS para
+implementar tu aplicación en contenedores.
+
+Google Container Registry (GCR): Similar a ECR de Amazon, GCR es un servicio de
+almacenamiento de imágenes de contenedores que permite a los desarrolladores almacenar,
+administrar y desplegar imágenes de contenedores en Google Cloud Platform.
+
+Quay.io: Es un registro de contenedores de código abierto y privado desarrollado por Red Hat.
+Ofrece características avanzadas de seguridad, como escaneo de vulnerabilidades y control de
+acceso basado en roles.
+
+Azure Container Registry (ACR): Es un servicio de registro de contenedores de Docker
+totalmente administrado que funciona con Azure, la plataforma en la nube de Microsoft.
+Permite a los desarrolladores almacenar, administrar y desplegar imágenes de
+contenedores en Azure.
+
+Estos son solo algunos ejemplos, y hay muchos otros registros de contenedores disponibles.
+La elección del registro adecuado depende de tus necesidades específicas, como requisitos
+de seguridad, integración con plataformas en la nube y preferencias personales.
