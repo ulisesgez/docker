@@ -104,3 +104,90 @@ Los pipelines suelen implementarse utilizando herramientas de automatización y 
 como Jenkins, GitLab CI/CD, Travis CI, CircleCI, entre otras.
 Estas herramientas permiten definir, configurar y ejecutar pipelines de manera flexible y
 personalizada según las necesidades del proyecto y del equipo de desarrollo.
+
+Docker Desktop:
+Es una aplicación que permite a los desarrolladores construir, probar y desplegar aplicaciones
+utilizando contenedores Docker en sistemas operativos de escritorio como Windows y macOS.
+Proporciona una forma conveniente de trabajar con contenedores sin necesidad de configurar
+un entorno complejo manualmente. Docker Desktop es una herramienta muy útil para los
+desarrolladores que desean trabajar con contenedores Docker en sus estaciones de trabajo
+locales sin necesidad de configuraciones complejas.
+
+Algunas de las características principales de Docker Desktop incluyen:
+
+Motor Docker: Docker Desktop incluye el motor Docker, que es la parte fundamental que
+permite la creación y ejecución de contenedores Docker en tu sistema operativo.
+
+CLI de Docker: La interfaz de línea de comandos (CLI) de Docker está integrada en Docker
+Desktop, lo que te permite ejecutar comandos Docker directamente desde tu terminal o línea
+de comandos.
+
+Docker Compose: Docker Desktop también incluye Docker Compose, una herramienta que facilita
+la definición y ejecución de aplicaciones multi-contenedor utilizando un archivo YAML para
+describir la configuración de la aplicación.
+
+Docker Hub Integration: Docker Desktop se integra con Docker Hub, el registro de imágenes de
+contenedores de Docker, lo que facilita la búsqueda, descarga y gestión de imágenes de contenedores.
+
+Configuración de recursos: Permite configurar la cantidad de recursos del sistema (CPU,
+memoria, almacenamiento) que se asignan a Docker Desktop, lo que permite ajustar el
+rendimiento según las necesidades del proyecto.
+
+Docker Engine:
+Es el componente central de la plataforma Docker. Es un servicio que ejecuta y gestiona los
+contenedores Docker en un sistema operativo host. Básicamente, es el motor que permite la
+creación, ejecución y gestión de contenedores Docker.
+
+El Docker Engine consta de varios componentes:
+
+Docker Daemon: Es un proceso en segundo plano que se ejecuta en el sistema operativo host
+y gestiona los contenedores Docker. El daemon es responsable de recibir comandos de la
+interfaz de línea de comandos de Docker (CLI), interactuar con el sistema operativo
+subyacente y orquestar la creación, ejecución y gestión de contenedores.
+
+API de Docker: El Docker Daemon expone una API RESTful que permite a los usuarios y
+aplicaciones interactuar con el Docker Engine. Esta API se puede utilizar para
+realizar operaciones como la creación de contenedores, la gestión de imágenes,
+la configuración de redes, entre otras.
+
+CLI de Docker: La interfaz de línea de comandos (CLI) de Docker es una herramienta que
+permite a los usuarios interactuar con el Docker Engine utilizando comandos de texto.
+Los usuarios pueden utilizar la CLI para ejecutar comandos como docker run, docker build,
+docker pull, entre otros, para realizar diversas tareas relacionadas con los contenedores
+y las imágenes de Docker.
+
+En resumen, el Docker Engine es el corazón de la plataforma Docker y proporciona las
+capacidades fundamentales para la virtualización de contenedores, permitiendo a los
+usuarios crear, ejecutar y gestionar aplicaciones en entornos contenerizados de
+manera eficiente y portátil.
+
+
+Docker Desktop y Docker Engine:
+Son dos componentes clave dentro del ecosistema de Docker, pero tienen roles
+y funcionalidades diferentes:
+
+Docker Engine:
+Es el componente esencial de Docker que ejecuta y gestiona los contenedores.
+Consiste en el motor de Docker (Docker Engine) y la interfaz de programación de aplicaciones
+(API) que permite la comunicación con el motor. Proporciona la funcionalidad básica para
+crear, ejecutar y gestionar contenedores Docker en un sistema operativo host.
+Docker Engine se instala y se ejecuta directamente en el sistema operativo
+del host, ya sea Linux, Windows o macOS a través de la tecnología de virtualización
+Hyper-V o WSL 2 en el caso de Windows y HyperKit en el caso de macOS.
+
+Docker Desktop:
+Es una aplicación todo en uno que simplifica el desarrollo, la gestión y la implementación
+de aplicaciones Docker en sistemas operativos de escritorio, como Windows y macOS.
+Incluye Docker Engine, así como herramientas adicionales como Docker CLI, Docker Compose,
+y una interfaz gráfica de usuario (GUI) para gestionar contenedores, imágenes y configuraciones.
+Docker Desktop proporciona una experiencia de desarrollo local conveniente y rápida 
+para los desarrolladores al eliminar la necesidad de configurar manualmente un entorno
+Docker en su sistema operativo de escritorio.
+Además de facilitar el desarrollo y la prueba de aplicaciones Docker, Docker Desktop
+también proporciona integración con Docker Hub y opciones de configuración avanzada,
+como la asignación de recursos del sistema para contenedores.
+
+En resumen, Docker Engine es el motor principal que ejecuta los contenedores Docker
+en el sistema operativo host, mientras que Docker Desktop es una aplicación que simplifica
+el uso y la gestión de Docker en sistemas operativos de escritorio al incluir Docker Engine
+y herramientas adicionales en un paquete fácil de instalar y usar.
