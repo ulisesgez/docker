@@ -1,0 +1,16 @@
+docker images:
+Se utiliza para listar todas las imágenes Docker disponibles en tu sistema.
+Muestra una lista de imágenes Docker en tu sistema.
+
+Ejemplo: Supongamos que tienes varias imágenes Docker descargadas en tu sistema.
+Al ejecutar el comando docker images, verías una salida similar a esta:
+
+$ docker images
+
+REPOSITORY       TAG       IMAGE ID       CREATED        SIZE
+ubuntu           latest    123456789abc   2 weeks ago    64.2MB
+nginx            latest    def456789ghi   3 months ago   132MB
+mysql            latest    ghi789abcdef   4 months ago   556MB
+
+En este ejemplo, se muestran tres imágenes Docker con sus respectivos repositorios,
+etiquetas, ID de imagen, fecha de creación y tamaño.
