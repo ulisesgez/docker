@@ -65,3 +65,22 @@ contenedores en Azure.
 Estos son solo algunos ejemplos, y hay muchos otros registros de contenedores disponibles.
 La elección del registro adecuado depende de tus necesidades específicas, como requisitos
 de seguridad, integración con plataformas en la nube y preferencias personales.
+
+Imagen:
+Es un paquete ligero y autónomo que incluye todo lo necesario para ejecutar una aplicación:
+el código, el tiempo de ejecución, las bibliotecas, las variables de entorno y las
+configuraciones. Esencialmente, una imagen Docker es una instantánea estática de un contenedor.
+
+Las imágenes Docker se crean utilizando un archivo de configuración llamado Dockerfile,
+que especifica los pasos necesarios para construir la imagen. Estos pasos pueden incluir
+la instalación de dependencias, la copia de archivos, la configuración de variables de
+entorno y la ejecución de comandos específicos.
+
+Una vez que se crea una imagen Docker, se puede compartir y distribuir a través de un
+repositorio de contenedores, como Docker Hub o un registro privado, para que otros
+desarrolladores puedan descargarla y ejecutarla en sus propios entornos.
+
+Las imágenes Docker siguen el principio de "una vez construido, en cualquier lugar
+ejecutable", lo que significa que una vez que se crea una imagen, se puede implementar
+y ejecutar en cualquier lugar que ejecute Docker, independientemente del sistema
+operativo subyacente o del entorno de desarrollo.
