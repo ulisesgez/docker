@@ -1,0 +1,11 @@
+Docker Ps:
+Se utiliza para mostrar todos los contenedores Docker que están actualmente en ejecución
+en el sistema. Muestra información sobre los contenedores Docker en ejecución.
+
+Ejemplo: Al ejecutar el comando docker ps, verás una salida similar a esta:
+
+$ docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS      NAMES
+abcdef123456   nginx:latest "nginx -g 'daemon of…"   5 minutes ago   Up 5 minutes   80/tcp     web_server
+
+En este ejemplo, se muestra un único contenedor en ejecución con su ID, la imagen utilizada para crearlo, el comando que se está ejecutando dentro del contenedor, el tiempo transcurrido desde que se creó, su estado actual, los puertos que están expuestos y el nombre del contenedor.
