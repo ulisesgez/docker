@@ -1,0 +1,18 @@
+Docker Logs:
+Se utiliza para ver los registros (logs) generados por un contenedor Docker en ejecución.
+Muestra los registros generados por un contenedor Docker en ejecución.
+Ejemplo: Supongamos que tienes un contenedor Docker llamado "mi_contenedor"
+que está en ejecución y deseas ver sus registros. Ejecutarías el siguiente comando:
+
+$ docker logs mi_contenedor
+
+Esto mostrará en la salida estándar los registros generados por el
+contenedor "mi_contenedor". Puedes usar este comando para depurar problemas,
+monitorear la actividad del contenedor o simplemente ver la salida de la aplicación
+que se está ejecutando dentro del contenedor. Si deseas seguir los registros en tiempo real,
+puedes agregar la opción -f o --follow:
+
+$ docker logs -f mi_contenedor
+
+Esto seguirá los registros en tiempo real, mostrando cualquier nueva salida a medida que
+se genera dentro del contenedor.
