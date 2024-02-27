@@ -1,0 +1,22 @@
+Docker Run:
+Se utiliza para crear y ejecutar un nuevo contenedor Docker basado en una imagen especificada.
+Crea y ejecuta un nuevo contenedor Docker basado en una imagen especificada.
+Ejemplo: Supongamos que deseas crear y ejecutar un nuevo contenedor basado en la imagen 
+de Ubuntu. Ejecutarías el siguiente comando:
+
+$ docker run -it ubuntu
+
+Este comando creará un nuevo contenedor basado en la imagen de Ubuntu y te proporcionará
+una sesión interactiva dentro del contenedor. La opción -it se utiliza para asignar un
+terminal interactivo al contenedor.
+
+Si deseas crear y ejecutar el contenedor en segundo plano, puedes agregar la opción -d:
+
+$ docker run -d ubuntu
+
+Esto creará un nuevo contenedor basado en la imagen de Ubuntu y lo ejecutará en segundo plano.
+Puedes encontrar su ID de contenedor utilizando el comando docker ps.
+
+Estos son solo algunos ejemplos básicos de cómo usar docker run. El comando tiene muchas
+opciones adicionales para configurar el contenedor, como la asignación de puertos,
+variables de entorno, volúmenes, etc.
