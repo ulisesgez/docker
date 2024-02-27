@@ -8,4 +8,22 @@ $ docker ps
 CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS      NAMES
 abcdef123456   nginx:latest "nginx -g 'daemon of…"   5 minutes ago   Up 5 minutes   80/tcp     web_server
 
-En este ejemplo, se muestra un único contenedor en ejecución con su ID, la imagen utilizada para crearlo, el comando que se está ejecutando dentro del contenedor, el tiempo transcurrido desde que se creó, su estado actual, los puertos que están expuestos y el nombre del contenedor.
+En este ejemplo, se muestra un único contenedor en ejecución con su ID,
+la imagen utilizada para crearlo, el comando que se está ejecutando dentro del contenedor,
+el tiempo transcurrido desde que se creó, su estado actual, los puertos que están expuestos
+y el nombre del contenedor.
+
+El comando docker ps -a se utiliza para mostrar todos los contenedores Docker,
+ya sea en ejecución o detenidos, en el sistema. Muestra información sobre todos los
+contenedores Docker, ya sea en ejecución o detenidos.
+Ejemplo: Al ejecutar el comando docker ps -a, verás una salida similar a esta:
+
+$ docker ps -a
+CONTAINER ID  IMAGE         COMMAND                CREATED        STATUS                    PORTS     NAMES
+abcdef123456  nginx:latest  "nginx -g 'daemon of…" 5 minutes ago  Up 5 minutes              80/tcp    web_server
+ghijkl789012  ubuntu:latest "/bin/bash"            1 hour ago     Exited (0) 30 minutes ago           my_ubuntu_container
+
+En este ejemplo, se muestra una lista de contenedores, tanto en ejecución como detenidos.
+Para cada contenedor, se proporciona su ID, la imagen utilizada para crearlo, el comando
+que se ejecutó dentro del contenedor, el tiempo transcurrido desde que se creó, su estado
+actual y los puertos que están expuestos, si corresponde.

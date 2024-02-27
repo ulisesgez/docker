@@ -15,3 +15,14 @@ $ docker start <container_id>
 
 Recuerda que al crear un contenedor con docker create, debes iniciar el contenedor
 manualmente con docker start para que comience a ejecutarse.
+
+El comando docker create --name se utiliza para crear un nuevo contenedor Docker con un
+nombre especificado pero sin iniciarlo. Crea un nuevo contenedor Docker con un nombre
+especificado pero sin iniciarlo.
+Ejemplo: Supongamos que deseas crear un nuevo contenedor con el nombre "mi_contenedor" basado en la imagen de Ubuntu. Ejecutarías el siguiente comando:
+
+$ docker create --name mi_contenedor ubuntu
+
+Esto creará un nuevo contenedor con el nombre "mi_contenedor" basado en la imagen de Ubuntu,
+pero no se iniciará automáticamente.
+Luego, para iniciar este contenedor, puedes usar el comando docker start mi_contenedor.

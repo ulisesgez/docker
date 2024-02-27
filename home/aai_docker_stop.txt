@@ -1,0 +1,14 @@
+Docker Stop:
+
+El comando docker stop se utiliza para detener uno o más contenedores Docker que están en ejecución. Aquí tienes la definición y un ejemplo:
+
+Definición: Detiene uno o más contenedores Docker en ejecución.
+Ejemplo: Supongamos que tienes un contenedor Docker llamado "mi_contenedor" que está en ejecución y deseas detenerlo. Ejecutarías el siguiente comando:
+
+$ docker stop mi_contenedor
+
+Si necesitas detener varios contenedores al mismo tiempo, puedes especificar múltiples nombres de contenedor separados por espacios:
+
+$ docker stop contenedor1 contenedor2 contenedor3
+
+Este comando detendrá todos los contenedores especificados que estén en ejecución.
