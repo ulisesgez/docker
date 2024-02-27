@@ -26,3 +26,15 @@ $ docker create --name mi_contenedor ubuntu
 Esto creará un nuevo contenedor con el nombre "mi_contenedor" basado en la imagen de Ubuntu,
 pero no se iniciará automáticamente.
 Luego, para iniciar este contenedor, puedes usar el comando docker start mi_contenedor.
+
+El comando docker create -p se utiliza para crear un nuevo contenedor Docker y mapear
+puertos del contenedor al host. Crea un nuevo contenedor Docker y mapea puertos
+del contenedor al host.
+Supongamos que deseas crear un nuevo contenedor basado en la imagen de nginx y
+mapear el puerto 80 del contenedor al puerto 8080 del host. Ejecutarías el siguiente comando:
+
+$ docker create -p 8080:80 nginx
+
+Esto creará un nuevo contenedor utilizando la imagen de nginx y mapeará el puerto 80 del
+contenedor al puerto 8080 del host. Ahora puedes iniciar este contenedor utilizando el
+comando docker start para que comience a ejecutarse.
