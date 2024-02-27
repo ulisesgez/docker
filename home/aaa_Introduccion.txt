@@ -191,3 +191,8 @@ En resumen, Docker Engine es el motor principal que ejecuta los contenedores Doc
 en el sistema operativo host, mientras que Docker Desktop es una aplicación que simplifica
 el uso y la gestión de Docker en sistemas operativos de escritorio al incluir Docker Engine
 y herramientas adicionales en un paquete fácil de instalar y usar.
+
+Port Mapping:
+Se refiere a la práctica de asignar puertos de un contenedor Docker a puertos en el sistema
+host o a otros contenedores. Esto es esencial para permitir que los servicios dentro de
+los contenedores sean accesibles desde fuera del entorno de Docker o desde otros contenedores.
