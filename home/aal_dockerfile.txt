@@ -1,0 +1,48 @@
+Dockerfile:
+Un Dockerfile es un archivo de texto plano que contiene una serie de instrucciones que Docker
+utilizará para construir una imagen Docker. Estas instrucciones describen los pasos necesarios
+para crear una imagen específica, incluyendo la instalación de software, la configuración del
+entorno y la definición de cómo se ejecutará la aplicación dentro del contenedor.
+
+Aquí hay una descripción general de algunas de las instrucciones comunes que se pueden
+utilizar en un Dockerfile:
+
+FROM: Especifica la imagen base desde la cual se construirá la nueva imagen.
+Por ejemplo: FROM ubuntu:latest.
+
+RUN: Ejecuta comandos dentro del contenedor durante el proceso de construcción de la imagen.
+Por ejemplo: RUN apt-get update && apt-get install -y nginx.
+
+COPY o ADD: Copia archivos desde la máquina host al sistema de archivos del contenedor.
+Por ejemplo: COPY mi_aplicacion /ruta/en/el/contenedor.
+
+WORKDIR: Establece el directorio de trabajo dentro del contenedor para los comandos siguientes.
+Por ejemplo: WORKDIR /app.
+
+EXPOSE: Indica qué puertos expone el contenedor. Por ejemplo: EXPOSE 80.
+
+CMD o ENTRYPOINT: Define el comando predeterminado que se ejecutará cuando se inicie un contenedor basado en la imagen.
+Por ejemplo: CMD ["nginx", "-g", "daemon off;"].
+
+Aquí tienes un ejemplo básico de un Dockerfile para una aplicación web Node.js:
+
+# Usa una imagen base de Node.js
+FROM node:14
+
+# Establece el directorio de trabajo
+WORKDIR /app
+
+# Copia los archivos del proyecto al directorio de trabajo
+COPY . .
+
+# Instala las dependencias
+RUN npm install
+
+# Expone el puerto 3000
+EXPOSE 3000
+
+# Define el comando predeterminado para iniciar la aplicación
+CMD ["npm", "start"]
+
+Este Dockerfile crearía una imagen Docker que ejecutaría una aplicación web Node.js cuando
+se inicie un contenedor basado en esa imagen.
