@@ -1,0 +1,33 @@
+Docker Network:
+Es un conjunto de comandos que te permite administrar redes en Docker.
+Con estos comandos, puedes crear, eliminar, inspeccionar y gestionar redes para conectar
+contenedores Docker entre sí y con otros recursos de red.
+Aquí tienes algunos de los comandos más comunes de docker network:
+
+docker network create: Crea una nueva red en Docker.
+
+$ docker network create my-network
+
+docker network ls: Lista todas las redes disponibles en Docker.
+
+$ docker network ls
+
+docker network inspect: Muestra información detallada sobre una red específica.
+
+$ docker network inspect my-network
+
+docker network connect: Conecta un contenedor a una red.
+
+$ docker network connect my-network my-container
+
+docker network disconnect: Desconecta un contenedor de una red.
+
+$ docker network disconnect my-network my-container
+
+docker network rm: Elimina una red.
+
+$ docker network rm my-network
+
+Estos comandos te permiten configurar y administrar redes en Docker,
+lo que es útil para conectar y aislar contenedores, así como para definir la
+comunicación entre ellos y con otros servicios en la red.
