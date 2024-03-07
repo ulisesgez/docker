@@ -1,0 +1,25 @@
+Docker Build:
+se utiliza para construir una nueva imagen Docker a partir de un Dockerfile y de todos
+los archivos necesarios en el contexto de construcción.
+
+Construye una imagen Docker a partir de un Dockerfile y de los archivos del contexto de
+construcción.
+Ejemplo: Supongamos que tienes un Dockerfile en un directorio local que contiene
+las instrucciones para construir una imagen de una aplicación web Node.js.
+Ejecutarías el siguiente comando para construir la imagen:
+
+$ docker build -t nombre_de_la_imagen ruta_al_directorio_del_Dockerfile
+
+Por ejemplo, si tu Dockerfile se encuentra en el directorio actual y deseas etiquetar
+la imagen como mi-aplicacion-node, usarías este comando:
+
+$ docker build -t mi-aplicacion-node .
+
+El punto (.) al final del comando indica que el contexto de construcción es el directorio
+actual, lo que significa que Docker utilizará todos los archivos y directorios en este
+directorio para construir la imagen.
+
+Durante el proceso de construcción, Docker seguirá las instrucciones del Dockerfile
+y creará una nueva imagen con el nombre especificado (mi-aplicacion-node en este caso).
+Una vez completada la construcción, la imagen estará disponible localmente y se podrá
+utilizar para crear contenedores Docker.
