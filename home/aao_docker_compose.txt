@@ -1,0 +1,51 @@
+Docker Compose:
+Es una herramienta que se utiliza para definir y ejecutar aplicaciones Docker
+multi-contenedor. Permite definir la configuración de una aplicación utilizando
+un archivo YAML llamado docker-compose.yml, donde se especifican los servicios,
+redes y volúmenes que componen la aplicación.
+
+Docker Compose simplifica el proceso de administración de aplicaciones Docker
+multi-contenedor al permitirte definir, ejecutar y administrar servicios de
+aplicación utilizando un solo archivo de configuración.
+
+Ejemplo: Supongamos que tienes una aplicación web compuesta por dos servicios:
+Un servidor web (servicio web) y una base de datos (servicio db).
+Crearías un archivo docker-compose.yml con la siguiente estructura:
+
+version: '3'
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: mydatabase
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+
+En este ejemplo, se definen dos servicios: web y db. 
+El servicio web utiliza la imagen de Nginx, mapea el puerto 8080 del host al
+puerto 80 del contenedor y monta el directorio ./html del host en el
+directorio /usr/share/nginx/html del contenedor.
+El servicio db utiliza la imagen de MySQL y establece algunas variables de entorno
+para configurar la base de datos.
+
+Una vez que tengas tu archivo docker-compose.yml, puedes ejecutar los servicios
+utilizando el siguiente comando en el directorio donde se encuentra el archivo:
+
+$ docker-compose up
+
+Esto iniciará todos los servicios definidos en el archivo docker-compose.yml.
+Si deseas ejecutar los servicios en segundo plano, puedes agregar la opción -d:
+
+$ docker-compose up -d
+
+Este es solo un ejemplo básico de cómo usar Docker Compose.
+La herramienta ofrece muchas más características, como la capacidad de
+construir imágenes, escalar servicios, administrar volúmenes y redes, entre otras.
