@@ -49,3 +49,23 @@ $ docker-compose up -d
 Este es solo un ejemplo básico de cómo usar Docker Compose.
 La herramienta ofrece muchas más características, como la capacidad de
 construir imágenes, escalar servicios, administrar volúmenes y redes, entre otras.
+
+El comando docker-compose down se utiliza para detener y eliminar los contenedores,
+las redes y los volúmenes asociados a una aplicación Docker definida en el archivo
+docker-compose.yml.
+
+Detiene y elimina los contenedores, las redes y los volúmenes asociados a una
+aplicación Docker definida en el archivo docker-compose.yml.
+Ejemplo: Supongamos que estás en el directorio donde se encuentra tu archivo
+docker-compose.yml y deseas detener y eliminar todos los recursos asociados
+a tu aplicación Docker. Ejecutarías el siguiente comando:
+
+$ docker-compose down
+
+Este comando detendrá y eliminará todos los contenedores, redes y volúmenes creados
+por Docker Compose en el directorio actual.
+
+Es importante tener en cuenta que docker-compose down solo eliminará los recursos
+que fueron creados con docker-compose up o docker-compose run en el mismo directorio
+donde se ejecuta el comando. Si tienes recursos de Docker que no están gestionados
+por Docker Compose en ese directorio, no se verán afectados por este comando.
