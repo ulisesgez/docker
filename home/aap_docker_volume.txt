@@ -1,0 +1,30 @@
+Docker Volume:
+Los volúmenes en Docker proporcionan un método para persistir y compartir datos entre
+contenedores y la máquina anfitriona. Son un componente esencial para el almacenamiento
+persistente de datos en contenedores.
+
+Un volumen en Docker es un directorio o un punto de montaje que existe fuera
+del sistema de archivos de un contenedor y está diseñado para persistir los datos
+más allá del ciclo de vida de un contenedor.
+
+Ejemplo: Supongamos que deseas crear un volumen en Docker para persistir
+datos de una base de datos MySQL. Puedes crear un volumen utilizando el comando
+docker volume create:
+
+$ docker volume create my-mysql-volume
+
+Este comando crea un nuevo volumen llamado my-mysql-volume. Luego, puedes utilizar este
+volumen al ejecutar un contenedor MySQL para asegurarte de que los datos de la base de
+datos se persistan incluso después de que el contenedor se detenga o se elimine:
+
+$ docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=example -v my-mysql-volume:/var/lib/mysql mysql:latest
+
+En este comando, la opción -v o --volume se utiliza para montar el volumen
+my-mysql-volume en el directorio /var/lib/mysql dentro del contenedor,
+que es donde MySQL almacena sus datos. Esto garantiza que los datos de la
+base de datos se almacenen fuera del contenedor y persistan incluso si el
+contenedor se detiene o se elimina.
+
+Los volúmenes en Docker son muy útiles para varios casos de uso, como la
+persistencia de datos de bases de datos, el almacenamiento de archivos
+estáticos en aplicaciones web y el intercambio de datos entre contenedores.
