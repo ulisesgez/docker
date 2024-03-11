@@ -1,0 +1,24 @@
+Docker Exec:
+Se utiliza para ejecutar un comando dentro de un contenedor Docker que ya está en
+ejecución.
+
+Ejecuta un comando dentro de un contenedor Docker en ejecución.
+Ejemplo: Supongamos que tienes un contenedor Docker en ejecución con el
+nombre mi_contenedor y deseas ejecutar el comando ls -l dentro de este contenedor
+para listar el contenido del directorio actual. Ejecutarías el siguiente comando:
+
+$ docker exec mi_contenedor ls -l
+
+Esto ejecutará el comando ls -l dentro del contenedor mi_contenedor y mostrará
+el resultado en tu terminal local. Puedes ejecutar cualquier comando válido dentro
+del contenedor de esta manera.
+
+Es importante tener en cuenta que el contenedor debe estar en ejecución para que
+docker exec funcione correctamente. Además, si necesitas ejecutar comandos interactivos
+que requieren una entrada del usuario, puedes usar la opción -it para asignar un
+terminal interactivo al contenedor:
+
+$ docker exec -it mi_contenedor /bin/bash
+
+Este comando abrirá una sesión interactiva dentro del contenedor, permitiéndote ejecutar
+múltiples comandos y trabajar en el entorno del contenedor de manera interactiva.
