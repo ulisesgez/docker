@@ -23,3 +23,28 @@ $ docker image rm -f $(docker image ls -q)
 
 Este comando eliminará todas las imágenes, incluso aquellas que estén en uso por contenedores
 en ejecución. Asegúrate de comprender el impacto antes de usarlo en un entorno de producción.
+
+Docker Image History:
+El comando docker image history se utiliza para ver el historial de una imagen Docker,
+lo que muestra una lista de todos los cambios y capas que componen esa imagen.
+
+Muestra el historial de una imagen Docker, incluyendo todas las capas y comandos que
+se utilizaron para construir la imagen.
+Ejemplo: Supongamos que deseas ver el historial de una imagen Docker llamada mi_imagen.
+Ejecutarías el siguiente comando:
+
+$ docker image history mi_imagen
+
+Esto mostrará una lista de todas las capas de la imagen mi_imagen, así como los
+comandos ejecutados en cada capa durante el proceso de construcción de la imagen.
+Por ejemplo:
+
+IMAGE          CREATED BY                                      SIZE
+abcd1234       /bin/sh -c #(nop) CMD ["nginx" "-g" "daemon…    0B
+efgh5678       /bin/sh -c #(nop) EXPOSE 80                      0B
+ijkl9101       /bin/sh -c #(nop) COPY file:xx3456 /var/ww…      124MB
+
+En este ejemplo, se muestran tres capas de la imagen mi_imagen. Cada línea muestra el
+identificador de la capa, el comando utilizado para crear esa capa y el tamaño de la capa.
+El historial de la imagen proporciona información detallada sobre cómo se construyó
+la imagen, lo que puede ser útil para entender su composición y optimizar su tamaño.
