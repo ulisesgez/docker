@@ -1,0 +1,27 @@
+Docker Commit:
+Se utiliza para crear una nueva imagen Docker a partir de un contenedor en ejecución.
+Esta imagen se basa en el estado actual del contenedor en el momento de la creación.
+
+Crea una nueva imagen Docker a partir de un contenedor en ejecución.
+Ejemplo: Supongamos que tienes un contenedor en ejecución y has realizado
+cambios significativos en él, como la instalación de nuevos paquetes o la
+modificación de archivos. Puedes usar el comando docker commit para crear una
+nueva imagen basada en este estado actual del contenedor. Por ejemplo:
+
+$ docker commit <ID_del_contenedor> nombre_de_la_imagen:nueva_etiqueta
+
+Donde <ID_del_contenedor> es el ID o el nombre del contenedor en ejecución del
+cual deseas crear la nueva imagen, y nombre_de_la_imagen:nueva_etiqueta es
+el nombre y la etiqueta que deseas asignar a la nueva imagen. Por ejemplo:
+
+$ docker commit my_container my_image:latest
+
+Esto creará una nueva imagen llamada my_image con la etiqueta latest,
+basada en el estado actual del contenedor llamado my_container.
+
+Es importante tener en cuenta que docker commit se utiliza generalmente para
+casos de uso específicos y no se recomienda como una práctica estándar para
+la gestión de imágenes Docker en entornos de producción, ya que puede resultar
+difícil de rastrear y gestionar cambios en las imágenes.
+En su lugar, es preferible utilizar Dockerfiles y Docker Compose para definir
+y gestionar imágenes de manera más eficiente y reproducible.
